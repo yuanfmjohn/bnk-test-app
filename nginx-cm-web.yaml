@@ -1,0 +1,11 @@
+apiVersion: v1
+kind: ConfigMap
+metadata:
+  name: netshoot-web-conf-cm
+data:
+  .curlrc: |
+    # custom CURL options
+    --location
+    --silent
+    --insecure
+    --max-time 1
